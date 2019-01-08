@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+xyz.sluggard.boot.turbo.autoconfigure.TurboAutoConfiguration

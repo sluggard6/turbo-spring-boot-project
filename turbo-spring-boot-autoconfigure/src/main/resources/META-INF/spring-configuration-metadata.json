@@ -1,0 +1,11 @@
+{
+  "hints": [],
+  "groups": [],
+  "properties": [
+    {
+      "sourceType": "xyz.sluggard.boot.turbo.autoconfigure.TurboProperties",
+      "name": "turbo.engine.currency-pair",
+      "type": "java.lang.String"
+    }
+  ]
+}

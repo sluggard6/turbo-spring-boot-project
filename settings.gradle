@@ -10,7 +10,5 @@
 rootProject.name = 'turbo-spring-boot-project'
 
 include 'turbo-spring-boot-starter'
-include 'turbo-spring-boot-actuator'
 include 'turbo-spring-boot-autoconfigure'
 include 'turbo-spring-boot-samples'
-include 'turbo-spring-boot-parent'
