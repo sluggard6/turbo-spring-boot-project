@@ -13,7 +13,7 @@ buildscript {
 allprojects  {
 	
     group = 'xyz.sluggard'
-    version = '0.1.0-SNAPSHOT'
+    version = '0.1.0'
 
 
 }
@@ -41,7 +41,7 @@ subprojects {
 	}
 	
     dependencies {
-    	compile 'xyz.sluggard:turbo:1.0-SNAPSHOT'
+    	compile 'xyz.sluggard:turbo:0.1.0'
         implementation 'org.projectlombok:lombok:1.18.4'
         testCompile 'org.springframework.boot:spring-boot-starter-test:2.1.1.RELEASE'
     }
@@ -61,7 +61,7 @@ project(':turbo-spring-boot-autoconfigure'){
 project(':turbo-spring-boot-starter'){
 
     dependencies {
-		compile 'xyz.sluggard:turbo-spring-boot-autoconfigure:0.1.0-SNAPSHOT'
+    	compile project(':turbo-spring-boot-autoconfigure')
     }
 }
 
@@ -72,7 +72,7 @@ project(':turbo-spring-boot-samples') {
 	
 	dependencies {
 		implementation('org.springframework.boot:spring-boot-starter-web')
-		compile 'xyz.sluggard:turbo-spring-boot-starter:0.1.0-SNAPSHOT'
+		compile project(':turbo-spring-boot-starter')
 		runtimeOnly('org.springframework.boot:spring-boot-devtools')
 		compileOnly('org.projectlombok:lombok')
 		testImplementation('org.springframework.boot:spring-boot-starter-test')
