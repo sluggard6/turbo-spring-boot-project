@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 import io.swagger.annotations.ApiOperation;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import simple.turbo.util.HttpResult;
 import xyz.sluggard.transmatch.core.Engine;
 import xyz.sluggard.transmatch.entity.Order;
 import xyz.sluggard.transmatch.entity.Order.Side;
-import xyz.sluggard.transmatch.vo.HttpResult;
 
 @RestController
 public class MatchController {
